@@ -18,7 +18,9 @@ def draw():
     screen.draw.text("Misses="+str(misses),(715,10))
     if game_over:
         screen.fill("#010029")
-        screen.draw.text(str(score), (330, 330), fontsize=100)
+        screen.draw.text("GAME OVER", (180, 100), fontsize=100)
+        screen.draw.text("Your total score:", (300, 285), fontsize=40)
+        screen.draw.text(str(score), (375, 330), fontsize=65)
 
 def time_up():
     global score, hits, misses, game_over
